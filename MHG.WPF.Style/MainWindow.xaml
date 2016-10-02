@@ -6,7 +6,23 @@
         xmlns:local="clr-namespace:MHG.WPF.Style"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
+    <!--<Window.Resources>
+        <Style x:Key="ButtonStyle" TargetType="Button">
+            <Setter Property="Height" Value="50"/>
+            <Setter Property="Width" Value="100" />
+            <Setter Property="Margin" Value="10" />
+        </Style>
+    </Window.Resources>-->
     <Grid>
-        
+        <!--<Button x:Name="btnTest" Content="KAYDET">
+            <Button.Style>
+                <Style>
+                    <Setter Property="Button.Width" Value="50"></Setter>
+                    <Setter Property="Button.Height" Value="50"></Setter>
+                    <Setter Property="Button.Margin" Value="10"></Setter>
+                </Style>
+            </Button.Style>
+        </Button>-->
+        <Button x:Name="btnTest" Content="KAYDET" Style="{DynamicResource ButtonStyle}"></Button>
     </Grid>
 </Window>
